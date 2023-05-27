@@ -105,12 +105,16 @@ print("-----------Final Resoult-----------")
 # Telling the user his score
 print(f'You got {user_points}  points! ')
 
+# if user didn't get any questions right it will print "You didn't answer any questions correct!" 
+# but if the user guesses some questions correct it will print them
 if correct_answers == "":
 	print("You didn't answer any questions correct!")
 else:
 	print(f'Correct answers: {correct_answers}')
 
 
+# if user doesn't guess any question wrong it will print "You didn't answer any questions worng!"
+# if user incorrents any question it will print the question he guessed wrong
 if incorrect_answers == "":
 	print("You didn't answer any questions worng!")
 else:
